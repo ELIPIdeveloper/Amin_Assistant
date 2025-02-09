@@ -12,76 +12,56 @@
             font-family: 'Tahoma', sans-serif;
             direction: rtl;
             background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
             line-height: 1.8;
-            color: #fff;
         }
         .container {
             max-width: 900px;
             margin: 30px auto;
-            background: #111; /* کادر روشن‌تر از پس‌زمینه */
+            background: #111;
             padding: 20px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
+            border-radius: 16px;
         }
         h1, h2 {
-            color: #00aaff; /* عنوان آبی */
-            font-size: 24px;
+            color: #00aaff;
             text-align: right;
-            font-weight: bold;
-            transition: transform 0.3s ease, text-shadow 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        h1:hover, h2:hover {
+            color: #ffcc00;
+            transform: scale(1.05);
+        }a:hover {
+            color: #ddd;
+            transform: scale(1.025);
+        }p:hover {
+            color: #ddd;
+            transform: scale(0.975);
         }
         p {
             text-align: right;
+            color: #ddd;
             font-size: 16px;
-            color: #fff;
-            transition: transform 0.3s ease, text-shadow 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
-        .highlight {
-            color: #FFD700; /* طلایی */
-            font-weight: bold;
-            transition: transform 0.3s ease, text-shadow 0.3s ease;
-        }
-
         img {
             display: block;
-            width: 85%; /* عرض تصویر 85% از عرض صفحه */
-            height: auto;
+            width: 85%;
             margin: 20px auto;
-            border-radius: 8px;
+            border-radius: 16px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         img:hover {
-            transform: scale(1.05); /* کمتر شدن شدت زوم */
-            box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* هاله سفید اضافه */
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
         }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        .highlight {
+            font-weight: bold;
+            color: #ffcc00;
         }
-
-        button:hover {
-            background-color: #0056b3;
-            box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* هاله آبی هنگام هاور */
-        }
-
-        /* بزرگ شدن و حالت فکوس برای عنوان‌ها و متن‌های بولد */
-        h1:hover, h2:hover, .highlight:hover {
-            transform: scale(1.05); /* بزرگ شدن */
-            text-shadow: none; /* حذف هاله پس‌زمینه هنگام هاور */
-        }
-
     </style>
     <meta name="google-site-verification" content="cUezitXjk9RNFsYBGkt4nVegHd09ylPq1mIfYdDbqcE" />
 </head>
