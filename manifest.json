@@ -1,0 +1,15 @@
+{
+  "name": "دستیار صوتی امین",
+  "short_name": "امین",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    }
+  ]
+}
